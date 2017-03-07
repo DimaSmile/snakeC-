@@ -11,11 +11,11 @@ namespace snakeCs
 
 		List<Point> pList;
 
-		public Vertical_line (int x, int yLeft, int yReight, char sym)
+		public Vertical_line (int x, int yUp, int yDown, char sym)
 		{
 			pList = new List<Point> ();
 			pList = new List<Point> ();
-			for (int y = yLeft; y <= yReight; y++) {
+			for (int y = yUp; y <= yDown; y++) {
 				Point p = new Point (x, y, sym);
 				pList.Add (p);
 			}
