@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace snakeCs
 {
-	public class Horisontal_line
+	class Horisontal_line : Figure
 	{
-
-		List<Point> pList;
 
 		public Horisontal_line (int xLeft, int xReight, int y, char sym)
 		{
@@ -17,12 +15,6 @@ namespace snakeCs
 			for (int x = xLeft; x <= xReight; x++) {
 				Point p = new Point (x, y, sym);
 				pList.Add (p);
-			}
-
-		}
-		public 	void Drow(){ //Метод Drow
-			foreach (Point p in pList) {
-				p.Draw (); 
 			}
 		}
 	}
