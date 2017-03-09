@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace snakeCs
 {
@@ -47,6 +48,12 @@ namespace snakeCs
 		{
 			Console.SetCursorPosition (x, y);
 			Console.WriteLine (sym);
+		}
+
+		public void Clear ()
+		{
+			sym = ' ';
+			Draw ();
 		}
 		
 		public override string ToString ()
